@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %} detail{%endblock title %}
+{% block content %}
+
+<table border='1'>
+    {% for n in object %}
+    
+   
+    <tr>
+        <li> Cath ID</li>
+<li>{{n.id}}</li>
+    </tr>
+    <tr>
+<li> Patient Name</li>
+<li>{{n.name}}  </li>
+    </tr>
+<tr><li>{{n.sex}}</li></tr>
+<tr><li>{{n.address}}</li></tr>
+<tr><li>{{n.cnic}}</li></tr>
+<tr><li>{{n.indication}}</li></tr>
+<tr>
+<li>{{n.procedure}}</li>
+<li>{{n.operator}}</li>
+
+
+
+{%endfor%}
+
+{% endblock %}
+</table> 
